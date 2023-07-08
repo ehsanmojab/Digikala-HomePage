@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>فروشگاه اینترنتی دیجی‌کالا</title>
+    
+    <style type="text/css">
+        .scrolled-down{
+          transform:translateY(-100%); transition: all 0.3s ease-in-out;
+        }
+        .scrolled-up{
+          transform:translateY(0); transition: all 0.3s ease-in-out;
+        }
+        
+        .dropdown:hover>.dropdown-menu {
+          display: block;
+        }
+
+        .dropdown>.dropdown-toggle:active {
+            pointer-events: none;
+        }
+
+        .rtl { direction: rtl; }
+        .rtl .dropdown-menu-right { text-align: right; }
+
+        .img-hor-vert {
+          transform: scale(-1, 1); /* change this for mirror */
+        }
+
+        .circles nav ul{
+          display: none;
+          position: absolute;
+          top: 210px;
+        }
+
+        #close {
+          display:none;
+        }
+        #shop {
+          align-items: center;
+
+        }
+        #apk {
+          background-color: #3c4b6d;
+        }
+        #apk button{
+          background-color: #3c4b6d;
+
+        }
+        
+    </style>
+  </head>
+  <body class="p-0">
+    <nav class="sticky-top bg-body">
+      <a href="https://www.digikala.com/landing/cooler_fan/?&promo_name=%DA%A9%D9%88%D9%84%D8%B1+%D9%88+%D9%BE%D9%86%DA%A9%D9%87&promo_position=all_mega_menu_top&promo_creative=153104&bCode=153104">
+        <picture >
+            <source srcset="assetes/top.jpg" type="image/webp">
+            <img src="assetes/top.webp" class="img-fluid" alt="image desc">
+            <a href=""></a>
+        </picture>
+      </a>
+      <ul class="nav nav-tabs px-3 py-0 mx-0" id="navId" role="tablist">
+        <picture class="my-3 mx-1">
+          <source srcset="assetes/logo.svg" type="image/svg+xml">
+          <img src="assetes/logo.svg" class="img-fluid mt-2" alt="image desc">
+        </picture>
+          
+        <div class="input-group-text my-2 mx-3 flex-grow-1 px-0 border-0 ms-xxlg-5">
+          <div class="">
+            <div class="input-group px-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search opacity-75 mx-3" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </div>
+          </div>
+          <input type="text" class="form-control bg-light border-0 py-0 px-0" id="inlineFormInputGroup" placeholder="جستجو">
+        </div>
+        <span class="me-5">
+          <a name="" id="" class="btn btn-close-white border rounded-3 fw-bold mx-3 my-2 p-2" href="#" role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+              <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+            </svg>
+            &#160;&#160;ورود | ثبت نام &#160;&#160;</a>
+        </span>
+        <div>
+            <!-- <img src="assetes/bar (Custom).png" width="8" height="144" class="p-0 rounded-0" alt=""> -->
+            <!-- <img src="assetes/bar (Custom).png" width="8" height="144" class=" rounded-0" alt=""> -->
+        </div>
+        <span class="img-hor-vert">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2 mt-3" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+          </svg>
+        </span>
+          
+      </ul>
+      
+      
+    </nav>
+    <nav class="autohide navbar navbar-expand-lg navbar-light bg-body">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+        <div class="dropdown rtl">
+          <button class="btn btn-body border-0 dropdown-toggle nav-underline" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <span class="fw-bold">دسته بندی کالاها</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right nav-underline" role="menu" aria-labelledby="dropdownMenuButton">
+            
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">  
+              <!-- Button in the end -->
+              <div class="input-group mb-3">
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider">asdasd/li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+              </div>
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">سوپرمارکت</a></li>
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">سوپرمارکت</a></li>
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">سوپرمارکت</a></li>
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">سوپرمارکت</a></li>
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">سوپرمارکت</a></li>
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">سوپرمارکت</a></li>
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">سوپرمارکت</a></li>
+            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">سوپرمارکت</a></li>
+          </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse felx-row gap-xxlg-5" id="main_nav">
+        <ul class="navbar-nav nav-underline ms-auto flex-grow-1" aria-current="page">
+          <li class="nav-item">
+           <a class="nav-link fs-6" href="#">
+              <img src="assetes/svgexport-10.svg" width="24" height="24" alt="">
+              سوپرمارکت             
+           </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"> <img src="assetes/svgexport-11.svg" width="24" height="24" alt="">پرفروش‌ترین‌ها </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> <img src="assetes/svgexport-12.svg" width="24" height="24" alt=""> تخفیف‌ها و پیشنهاد‌ها</a></li>
+          <li class="nav-item"><a href="" class="nav-link"><img src="assetes/svgexport-13.svg" alt="">شگفت‌انگیز‌ها</a></li>
+          <li class="nav-item"><a href="" class="nav-link">سوالی دارید؟</a></li>
+          <li class="nav-item"><a href="" class="nav-link fs-6">در دیجی‌کالا بفروشید! </a></li>
+        </ul>
+        <div class="nav-item">
+          <a href="" class="nav-link"><img src="assetes/svgexport-14.svg" alt="asdas">لطفا شهر خود را انتخاب کنید </a>
+        </div>
+      </div>
+      </div>
+    </nav>
+    
+    <section>
+      <!-- <div class="p-xxl-5 text-dark"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit pariatur veritatis et temporibus harum rem nisi eligendi, aliquid tempore, cum consequatur quia culpa numquam accusamus totam voluptatem. Ullam optio reiciendis ex totam voluptatibus fugiat nobis saepe dolorem explicabo quia distinctio suscipit repellendus nostrum odio molestias possimus numquam rerum impedit officiis, quisquam nam! Nihil voluptates incidunt temporibus dolor nesciunt iure ut omnis quisquam nisi eius ipsam saepe repellendus nemo sed expedita totam reprehenderit, dolore, rerum officia ullam voluptas impedit, sequi esse sit. Pariatur exercitationem asperiores dolorum maxime, eum, debitis molestias odio accusantium sapiente cum vel dolor maiores minus est necessitatibus aliquam nam fugit iusto dolores aperiam beatae. Laborum, dicta iste provident odio quae repellendus veniam similique? Repellendus architecto ex praesentium, ipsa doloribus, quae distinctio incidunt tempora dolore, in excepturi dicta alias dolorum amet error. Accusantium dolores, sapiente voluptate odio laborum, eum quod placeat quidem voluptatibus amet tempore aspernatur nam cum nobis veniam reiciendis deleniti dolorum nisi ullam animi similique rem perspiciatis labore? Error itaque, suscipit quod quia, architecto voluptate culpa reiciendis ad, temporibus saepe ipsam? Natus doloremque voluptate reprehenderit velit, illum exercitationem sequi incidunt architecto optio nostrum id quidem dignissimos doloribus harum, ab alias eum tempora quibusdam placeat vero? Eius doloremque quidem velit reiciendis expedita iure, itaque, animi libero accusantium vel numquam obcaecati explicabo cumque nostrum doloribus id perspiciatis officiis. Neque, soluta. Fuga expedita modi tenetur, deleniti placeat quibusdam molestias vel consectetur? Possimus atque facere eum ex voluptate suscipit error, placeat corporis voluptatibus magni aspernatur, sequi consequatur! Libero voluptate at aliquam tempore? Debitis tempore dolores quod numquam! Rem modi ipsam nisi dolores molestias maxime a officiis quam, delectus explicabo nemo enim quae blanditiis aspernatur commodi distinctio. Praesentium totam rem, in dignissimos animi quod natus aut quisquam doloremque harum consequuntur, deserunt veniam quibusdam asperiores corrupti similique maxime ullam nostrum facere, aliquid voluptate. Minus quas porro ipsa mollitia facere quaerat voluptatem esse, fuga nobis, nemo quam illo veniam laboriosam nihil at sed veritatis corrupti iure dicta accusantium dignissimos perspiciatis nisi tempora. Eius ullam quis consectetur excepturi ipsum libero. Dignissimos cumque illo placeat quasi quibusdam sed labore debitis quia minus nisi, ipsa doloribus vero saepe perferendis nihil voluptate corrupti iste, laudantium quae cupiditate possimus, optio iure suscipit doloremque. Modi recusandae expedita quae eos nobis, sunt dolorum dolor perspiciatis harum. Soluta distinctio aperiam necessitatibus, ad quisquam ratione fuga magnam aliquam iure? Alias iste ut animi fugit. Reprehenderit tempora fuga laudantium est laboriosam doloremque optio totam porro beatae nulla ab, ipsum qui officia veritatis praesentium, quibusdam, quae commodi eaque id? Eum soluta possimus quas corporis ad nulla magni sunt dolores, excepturi minima, obcaecati atque repellendus quaerat numquam id pariatur animi. Explicabo voluptatem sed autem iusto itaque assumenda doloremque, officia accusamus alias tempora eius asperiores, at veniam laborum quos quod id optio facere esse soluta fugit aut nam voluptas? Temporibus porro tenetur, accusamus quo eligendi nostrum est. Rerum dicta ex nesciunt inventore, natus, sequi exercitationem ipsam minima saepe voluptas eligendi! Nobis illum quisquam totam aliquid alias, neque necessitatibus voluptatibus, voluptatum eligendi accusantium optio dolores quasi omnis. Numquam consequuntur consequatur laboriosam, repellat animi sint doloremque, nemo ipsum sit eum pariatur esse fugit! Deleniti accusamus obcaecati voluptas quam ad, fuga commodi veritatis labore harum quos minima sed deserunt. Rem error consequuntur esse maxime? Repudiandae autem enim, aut mollitia voluptas atque, ducimus illum corrupti fugiat distinctio obcaecati commodi. Esse officia est voluptatem eius consectetur excepturi error a, architecto sapiente ea optio. Quasi tempora assumenda vero saepe culpa incidunt pariatur dolorum? Qui repellendus nisi minima! Asperiores doloribus repellendus impedit distinctio cum rerum repudiandae, et ex atque delectus labore aperiam accusamus libero numquam tempora eaque voluptatibus sequi, rem fugit. Nihil iure obcaecati dicta quisquam vitae beatae distinctio voluptatem enim illo eius. Consectetur amet voluptate, esse, necessitatibus nesciunt eveniet odio suscipit maxime voluptates inventore recusandae at aliquid ab veritatis. Sit, quaerat dicta. Libero, temporibus recusandae illum totam officia sed maiores veniam numquam impedit voluptatem esse amet dolore ad maxime iure repellat doloribus, sequi, eveniet hic tempore ex suscipit distinctio! Quo eos laudantium quis deserunt. Velit beatae earum, ratione eius sequi harum repudiandae! Tenetur odit, quidem nobis libero quo ea vel impedit veritatis totam enim alias in iste iusto laudantium possimus tempore a esse voluptates. Nesciunt, at similique. Molestiae tempora provident dolore maxime laborum? Perferendis, eaque omnis porro explicabo perspiciatis repellat officiis! Repellendus, nostrum incidunt minima blanditiis amet omnis itaque delectus quia vel corporis obcaecati, quis necessitatibus quo dicta natus. Consequatur, cupiditate delectus quae animi commodi architecto quisquam nemo! Quos, sequi ullam? Voluptatem in neque, adipisci consequuntur placeat illum cum cupiditate eaque dicta quasi nam incidunt qui eius explicabo iusto consectetur nostrum aliquid! Quidem, harum at reprehenderit nesciunt eos laboriosam possimus dolorum facere tempora modi eligendi adipisci voluptatem optio minus id, ratione illo eveniet nobis suscipit? Fugit ex, saepe voluptates ducimus aliquam ab. Maiores, quisquam. Praesentium labore perspiciatis ipsam consequatur iure, minus molestiae iste sequi! Excepturi, ipsam. Quaerat autem expedita nisi unde itaque doloremque velit tempora! Dolores, facilis repudiandae eaque corporis praesentium, nihil blanditiis rerum nisi quis ducimus aliquam. Dolores odio aperiam eaque cupiditate unde fugiat temporibus explicabo tempore autem nulla et quos saepe, inventore quae accusantium fugit commodi facere quia voluptates ea incidunt doloribus corrupti magnam. Incidunt, laudantium tenetur numquam voluptatibus voluptate sunt cupiditate voluptas repellendus possimus quia similique id accusamus expedita voluptates ratione dolor inventore debitis quisquam, accusantium corrupti ullam quae sequi. Aspernatur esse cupiditate, dignissimos nisi laudantium nam quibusdam repellat consectetur perspiciatis quas perferendis dolores ut adipisci repellendus facere necessitatibus? Tenetur totam consectetur neque expedita aliquam accusantium dicta quam ea aperiam eaque vel laudantium recusandae, architecto, dolor dolorem officiis numquam tempora molestias ex debitis nemo voluptatem. Dolores, quam earum veritatis id architecto temporibus repellat magni odit necessitatibus? Debitis aspernatur soluta, voluptas iste assumenda officia architecto exercitationem asperiores culpa maxime eos dolores neque aut quasi incidunt illo doloremque optio eveniet molestiae tenetur placeat! Sunt hic repellat dolores dicta laboriosam voluptatum debitis officiis consequatur optio. Neque a quia necessitatibus aperiam hic saepe perspiciatis libero in quaerat, minus, veniam totam magnam suscipit ipsa iure provident amet nam facere expedita, deleniti ratione! Iusto mollitia odit ad ut, provident placeat quo, maiores fugit ipsa animi sed nobis id sapiente dolorem quod harum dicta, illum qui? Nesciunt nostrum corrupti minima natus quia, tempora et aut odio. Error labore sapiente nam repellendus magnam qui assumenda perferendis reprehenderit possimus. Impedit eveniet nemo velit amet id possimus, minus in et corporis modi repellat iste praesentium eum quibusdam officiis! Voluptas nobis cumque distinctio maxime eos molestias excepturi tempora architecto eum! Dignissimos tempora ea exercitationem quae expedita temporibus reprehenderit. Dignissimos ipsam enim non tempora nisi dolorum quam magnam repudiandae ea perspiciatis? Incidunt ipsa dolore voluptas aliquam eligendi animi, consequuntur quisquam earum deserunt officia labore, velit laudantium, modi omnis nobis? Fuga ut quidem porro! Magnam repellat in magni illo possimus officiis numquam quae facilis consequatur aliquam inventore veritatis, aperiam, quasi aspernatur veniam, eaque repellendus eos temporibus ipsam ipsum quisquam hic provident. Consequuntur perferendis commodi doloribus dolorem quod dicta beatae, pariatur ut, animi accusantium quam iure obcaecati fugiat praesentium provident minima ratione autem. Necessitatibus sequi aliquid nulla distinctio nemo quaerat incidunt repellendus excepturi nostrum nobis delectus beatae, libero reprehenderit consectetur nesciunt quasi corporis earum temporibus? Numquam porro quo quaerat alias voluptas tempora nostrum ipsam perspiciatis cumque tenetur mollitia illum eum voluptates temporibus optio, explicabo molestias, consectetur voluptatem! Sunt dolorum blanditiis quae ab repellat iusto, alias minus nam dignissimos dolorem, ex inventore beatae explicabo veritatis incidunt eligendi enim corrupti! Illo unde quisquam esse atque totam expedita dicta dolorum? Distinctio, adipisci animi quae voluptatem tempore quis laborum. Sit voluptates praesentium non distinctio quo sapiente omnis mollitia numquam officiis voluptate iusto, modi inventore nulla. Iste ut sequi vel beatae ratione quod laborum iusto non voluptatibus, aliquid culpa, excepturi quae quidem nihil praesentium hic porro officiis et, quis est perferendis quia! Voluptate aspernatur at odit explicabo qui quos illum repudiandae doloribus vero impedit hic, eveniet quisquam harum, aliquid accusamus ex ratione recusandae culpa ducimus esse? Odit labore voluptates similique voluptatibus suscipit quam assumenda alias accusantium dolor delectus tempore ad vitae non perspiciatis, ipsum totam quisquam. Aspernatur ab id eum iste, possimus expedita voluptas natus consequuntur! Tempore alias quo a eius optio non illo? Atque fugit consequatur, rerum deleniti est consectetur eveniet doloribus quae temporibus aspernatur alias voluptas. Quo perspiciatis eum fugit mollitia neque vero quod ad dignissimos molestias, dolore fugiat natus voluptates labore veniam soluta dolor. Perspiciatis, blanditiis dicta modi nostrum quo fuga numquam quod assumenda eveniet non debitis, recusandae, atque labore laudantium ratione. Mollitia inventore culpa id dolorum debitis, fugit voluptatem, commodi consectetur unde quos consequuntur. Tenetur consectetur ad velit cumque necessitatibus fugit, fuga maxime perspiciatis animi obcaecati vel placeat, quas, dolorum accusamus sequi ipsam amet mollitia sunt doloribus numquam laudantium quibusdam. Aut obcaecati ratione molestias laboriosam voluptate sapiente veniam ipsam similique! Adipisci accusamus id maiores ipsa velit optio aliquam a commodi, dolores enim placeat necessitatibus aut, provident soluta, rem deserunt aperiam ea corrupti voluptatibus odio. Non quisquam dolorum nobis ducimus nesciunt, sint reiciendis delectus voluptatibus optio maxime officia temporibus id amet debitis velit quis laborum laboriosam! Voluptas perferendis inventore voluptatum nobis, quibusdam beatae natus nisi.</p>  </div> -->
+      <div class=" mt-3">
+        <ul class="nav justify-content-center align-content-around">
+            <li class="nav-item">
+                <a class="nav-link px-4" href="#"><img class="border-1" src="assetes/p1.png" width="95" height="88" alt=""><p class="text-center text-black">منتخب هفته</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="#"><img src="assetes/p2.png" width="95" height="88" alt=""><p class="text-center text-black">صندل جذاب</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="#"><img src="assetes/p3.png" width="95" height="88" alt=""><p class="text-center text-black">منتخب هفته</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#"><img src="assetes/p4.png" width="95" height="88" alt=""><p class="text-center text-black">روشنی راه</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#"><img src="assetes/p5.png" width="95" height="88" alt=""><p class="text-center text-black">آیسول</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#"><img src="assetes/p6.png" width="95" height="88" alt=""><p class="text-center text-black">وقت بازی</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#"><img src="assetes/p7.png" width="95" height="88" alt=""><p class="text-center text-black">خانه روشن</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#"><img src="assetes/p8.png" width="95" height="88" alt=""><p class="text-center text-black">لوازم التحریر</p></a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="circles">
+        <nav class="nav justify-content-center ">
+          <ul class="nav justify-content-center justify-content-between ">
+            <li class="nav-item">
+              <img src="assetes/red-circle.png" class="mx-4 px-0" width="95px" alt="">
+            </li>
+            <li class="nav-item">
+              <img src="assetes/red-circle.png" class="mx-4 px-0" width="95px" alt="">
+            </li>
+            <li class="nav-item">
+              <img src="assetes/red-circle.png" class="mx-4 px-0" width="95px" alt="">
+            </li>
+            <li class="nav-item">
+              <img src="assetes/red-circle.png" class="mx-4 px-0" width="95px" alt="">
+            </li>
+            <li class="nav-item">
+              <img src="assetes/red-circle.png" class="mx-4 px-0" width="95px" alt="">
+            </li>
+            <li class="nav-item">
+              <img src="assetes/red-circle.png" class="mx-4 px-0" width="95px" alt="">
+            </li>
+            <li class="nav-item">
+              <img src="assetes/red-circle.png" class="mx-4 px-0" width="95px" alt="">
+            </li>
+            <li class="nav-item">
+              <img src="assetes/red-circle.png" class="mx-4 px-0" width="95px" alt="">
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div id="carouselExampleDark" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="bg-secondary" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="bg-secondary" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assetes/slide1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assetes/slide2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assetes/slide3.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-next-icon bg-secondary border-0 rounded-4" id="slidebtn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="visually-hidden">Next</span>
+        </button>
+        <button class="carousel-control-prev-icon bg-secondary border-0 rounded-4" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="visually-hidden">Previous</span>
+        </button>
+      </div>
+
+      <nav class="nav justify-content-center">
+        <a class="nav-link" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-4"><img src="https://dkstatics-public.digikala.com/digikala-bellatrix/d0dc31c892be8cf1408e4e14580b3f479da66bd1_1648897133.png" height="52px" alt=""><p>دیجی‌کالا جت</p></button></a>
+        <a class="nav-link" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-4"><img src="https://dkstatics-public.digikala.com/digikala-bellatrix/625d8883f37944f3f0c4af5fe39435600931ab22_1664309850.png   " height="52px" alt=""><p>حراج استایل</p></button></a>
+        <a class="nav-link" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-4"><img src="https://dkstatics-public.digikala.com/digikala-bellatrix/ac127167132653d14c758748b07824a6a7643a31_1663444619.png" height="52px" alt=""><p>خرید اقساطی</p></button></a>
+        <a class="nav-link" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-4"><img src="https://dkstatics-public.digikala.com/digikala-bellatrix/6c69096a524add2d4646cd162dfa5f66d4ddceac_1668952039.png" height="52px" alt=""><p>خرید عمده و سازمانی</p></button></a>
+        <a class="nav-link" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-4"><img src="https://dkstatics-public.digikala.com/digikala-bellatrix/502e6878d659f148b2824ad3549ce1ddbb954429_1688565308.png" height="52px" alt=""><p>خرید جهیزیه</p></button></a>
+        <a class="nav-link" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-4"><img src="https://dkstatics-public.digikala.com/digikala-bellatrix/bfcafaf7f0afffbfd326adc48e29e3449dd69910_1688462197.png" height="52px" alt=""><p>ارسال امروز</p></button></a>
+        <a class="nav-link" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-4"><img src="https://dkstatics-public.digikala.com/digikala-bellatrix/269766a358cf34e58ccaf49aa3ac2d2db397af7a_1686642203.png" height="52px" alt=""><p>شگفت سوپر‌مارکتی</p></button></a>
+        <a class="nav-link" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-circle bg-body-secondary p-2 mt-2"><img src="assetes/more.svg" type="img/svg"  alt=""></button><p class="text-center"><span class="text-center text-black justify-content-center ">بیشتر</span></p></a>
+      </nav>
+
+      <div class="card-group bg-danger mx-5 my-2 rounded-end-5 border-start rounded-start-5" id="cards">
+        <div class="card m-5 border-0">
+          <img class="card-img-top bg-danger rounded-0" src="assetes/Amazings.svg" height="125"  alt="Card image cap">
+          <img class="card-img-top bg-danger rounded-0" src="assetes/box.png" height="120"  alt="Card image cap">
+          <div class="card-body bg-danger">
+            <button type="button" class="border-0 bg-danger text-white text-center fw-bold">مشاهده همه <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg></button>
+          </div>
+        </div>
+        <div class="card mx-1 my-3 rounded-1">
+          <img class="card-img-top img-fluid my-5" src="https://dkstatics-public.digikala.com/digikala-products/2ed906cc538dd6612ca51641cdebe6eed4cfa9d0_1664622062.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" height="190" alt="Card image cap">
+          <div class="card-body m-2 p-0">
+            <h4 class="card-title d-flex" dir="ltr"><img src="assetes/price.svg" height="16" type="img/svg" alt=""><span class="fw-bold fs-6 ms-1 flex-grow-1">۸۹۹,۰۰۰</span><span class="bg-danger fs-6 text-white rounded-5 px-1">۵۰٪</span></h4>
+            <p class="card-text mt-4 ms-4" dir="ltr"><span class="text-decoration-line-through opacity-50">۱۲۲,۰۰۰</span></p>
+          </div>
+        </div>
+        <div class="card mx-1 my-3 rounded-1">
+          <img class="card-img-top img-fluid my-5" src="https://dkstatics-public.digikala.com/digikala-products/2d63f5a72dc293d11f8daf0aad86ae06b7aa59ef_1684834823.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" height="290" alt="Card image cap">
+          <div class="card-body m-2 p-0">
+            <h4 class="card-title d-flex" dir="ltr"><img src="assetes/price.svg" height="16" type="img/svg" alt=""><span class="fw-bold fs-6 ms-1 flex-grow-1">۱۱۵,۰۰۰</span><span class="bg-danger fs-6 text-white rounded-5 px-1">۲۰٪</span></h4>
+            <p class="card-text mt-4 ms-4" dir="ltr"><span class="text-decoration-line-through opacity-50">۱۹۲,۰۰۰</span></p>
+          </div>
+        </div>
+        <div class="card mx-1 my-3 rounded-1">
+          <img class="card-img-top img-fluid my-5" src="https://dkstatics-public.digikala.com/digikala-products/010f2ed62002dd287664f5b1f5060c2da574a15f_1678006292.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" height="290" alt="Card image cap">
+          <div class="card-body m-2 p-0">
+            <h4 class="card-title d-flex" dir="ltr"><img src="assetes/price.svg" height="16" type="img/svg" alt=""><span class="fw-bold fs-6 ms-1 flex-grow-1">۲۵۰,۰۰۰</span><span class="bg-danger fs-6 text-white rounded-5 px-1">۱۰٪</span></h4>
+            <p class="card-text mt-4 ms-4" dir="ltr"><span class="text-decoration-line-through opacity-50">۳۵۰,۰۰۰</span></p>
+          </div>
+        </div>
+        <div class="card mx-1 my-3 rounded-1">
+          <img class="card-img-top img-fluid my-5" src="https://dkstatics-public.digikala.com/digikala-products/9f3ef7bd26e9077a36ed1db3f03ed82b3b332c20_1673437043.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" height="290" alt="Card image cap">
+          <div class="card-body m-2 p-0">
+            <h4 class="card-title d-flex" dir="ltr"><img src="assetes/price.svg" height="16" type="img/svg" alt=""><span class="fw-bold fs-6 ms-1 flex-grow-1">۴۵۰,۰۰۰</span><span class="bg-danger fs-6 text-white rounded-5 px-1">۷۰٪</span></h4>
+            <p class="card-text mt-4 ms-4" dir="ltr"><span class="text-decoration-line-through opacity-50">۴۶۰,۰۰۰</span></p>
+          </div>
+        </div>
+        <div class="card mx-1 my-3 rounded-1">
+          <img class="card-img-top img-fluid my-5" src="https://dkstatics-public.digikala.com/digikala-products/121340851.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" height="290" alt="Card image cap">
+          <div class="card-body m-2 p-0">
+            <h4 class="card-title d-flex" dir="ltr"><img src="assetes/price.svg" height="16" type="img/svg" alt=""><span class="fw-bold fs-6 ms-1 flex-grow-1">۸۰,۰۰۰</span><span class="bg-danger fs-6 text-white rounded-5 ms-5 px-1">۴۰٪</span></h4>
+            <p class="card-text mt-4 ms-4" dir="ltr"><span class="text-decoration-line-through opacity-50">۹۹,۰۰۰</span></p>
+          </div>
+        </div>
+        <div class="card rounded-0 ms-3 me-1 my-3 rounded-1">
+          <img class="card-img-top img-fluid my-5" src="https://dkstatics-public.digikala.com/digikala-products/e178959c9b2582f9d29717a5888c7fc330c19591_1662555522.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" height="290" alt="Card image cap">
+          <div class="card-body m-2 p-0">
+            <h4 class="card-title d-flex" dir="ltr"><img src="assetes/price.svg" height="16" type="img/svg" alt=""><span class="fw-bold fs-6 ms-1 flex-grow-1">۱,۲۰۰,۰۰۰</span><span class="bg-danger fs-6 text-white rounded-5 px-1">۳۵٪</span></h4>
+            <p class="card-text mt-4 ms-4" dir="ltr"><span class="text-decoration-line-through opacity-50">۱,۴۰۰,۰۰۰</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="flex-row"> 
+        <h4 class="flex-grow-1 text-center"><div class="text-center">ss</div><div class="flex-grow-1 text-end">ss</div></h4>
+      </div> -->
+      
+      <ul class="d-flex">
+        <div class="flex-fill justify-content-end"><span>end</span></div>
+        <div class="flex-fill justify-content-start"><span>start</span></div>
+      </ul>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium aspernatur voluptas voluptatem. Fuga dicta cumque nam voluptatum cupiditate similique vitae sit quasi illo, voluptatem repellat nesciunt tempore in accusantium eos natus ullam nihil, numquam temporibus commodi repudiandae ut iusto. Tempora recusandae, sunt sit molestiae omnis incidunt culpa alias dignissimos dolore fugit animi, rerum mollitia nostrum dolor nam esse quis eos eveniet accusantium laborum! Sed tempora dolorem nam, neque ex aspernatur eaque, id facilis sapiente reiciendis atque quam a officia facere. Aliquid autem officiis facere veritatis quas qui neque aspernatur nisi hic eius. Sunt, minus tempora explicabo, voluptas quod illo magnam non quasi, debitis porro temporibus laborum eligendi ex neque! Asperiores maxime illo eius quos unde sint porro, libero eveniet voluptatem at? Provident voluptatem voluptatum, quisquam numquam at id deserunt debitis harum officiis voluptates, excepturi facere magnam? Nostrum incidunt fuga a debitis, sequi omnis rem neque amet quos quas harum vitae cumque ducimus tenetur perferendis nemo excepturi mollitia at, ipsa eum nobis fugit officiis. Aliquid vel maxime placeat? Eum totam porro repellat illum accusamus quae sit inventore expedita soluta provident rerum modi quia dolorum tempora autem eveniet beatae, at dignissimos nesciunt, enim quisquam quam magnam? Dignissimos tenetur obcaecati alias dolor! Reprehenderit quibusdam dolores, laborum, unde non laboriosam obcaecati debitis atque ab amet eligendi nulla? Incidunt nulla, molestiae similique ipsum magnam labore unde quibusdam reiciendis odit ad mollitia minus rem, itaque ipsa voluptas obcaecati iste rerum voluptatem aspernatur autem facilis! Corrupti animi, quia porro dignissimos laudantium eum totam neque quidem error nam veniam recusandae, necessitatibus iusto dolorum dicta tenetur? Obcaecati placeat nulla dolor velit excepturi repudiandae praesentium dignissimos doloremque, maiores porro magnam debitis atque quod nisi veniam, facere quibusdam earum explicabo saepe similique. Molestias, modi dignissimos! Harum porro vel qui, cumque fugiat ullam. Debitis harum minus esse inventore, ipsum dolores labore libero nesciunt veritatis illo provident ea reiciendis aperiam quia obcaecati sunt vero maxime iusto enim ab corporis! Fuga ducimus cupiditate reprehenderit necessitatibus veniam non voluptatibus iusto deleniti aspernatur quasi ex delectus repudiandae, est provident rerum odit tenetur modi, itaque quisquam consequatur, iure similique sequi. Consequatur nam iusto enim corrupti quas, labore cupiditate! Mollitia ex odio earum nam quae! Quo sit vero adipisci ut cupiditate unde repellendus nesciunt ipsam debitis! Delectus commodi at, facere vel asperiores ipsa explicabo magni reprehenderit perferendis nostrum cupiditate reiciendis hic iure excepturi architecto nihil, fuga laboriosam nisi eius cumque iusto. Vero fuga non quisquam similique ab. Magnam placeat dolorum minus commodi quo, odit voluptatum nulla, tempore eveniet nihil accusamus ex molestias, est eum itaque consequatur quis fugit eius officia. Explicabo natus quo unde inventore commodi illum quibusdam nemo. Placeat quibusdam fugit tempora dolorem, perspiciatis, aperiam laboriosam dolor vel facere corporis, quod culpa possimus ipsam voluptatibus libero veniam beatae nesciunt iusto? Blanditiis soluta sunt consequuntur ipsam, fugiat quidem enim explicabo! Enim, architecto qui itaque mollitia explicabo quisquam deserunt incidunt eius quis tempora amet natus, totam quo blanditiis, ad vero? Illum iure perspiciatis, dolor repellat, rerum expedita veniam voluptatem vero, cupiditate possimus obcaecati molestiae pariatur aut nesciunt dolores mollitia. Nemo amet cum quasi deserunt quidem, harum ex laudantium alias dolorem hic voluptatibus officia et fuga aliquid ea placeat, consequatur iure dolorum eveniet mollitia molestiae illum delectus excepturi illo. Consectetur facere, distinctio, praesentium quia dolore velit recusandae dignissimos veritatis tempore, unde accusantium quo earum fuga sit aspernatur deleniti eveniet. Voluptatum iste nobis perspiciatis amet vitae culpa aut ducimus, et sunt, eum libero? Hic assumenda accusamus in, excepturi magnam voluptatibus. Labore alias voluptates ipsam qui illo soluta, officiis sunt ullam voluptatibus voluptate. Ipsam, similique. Consequatur, deleniti quos? Iste obcaecati asperiores voluptate maxime fugit laboriosam iusto quam. Odit, quas voluptates. Fuga commodi amet dolor explicabo totam tenetur minus. Distinctio, corporis. Placeat corrupti quas est, fugit voluptates ad magnam molestiae repellendus error, doloremque sapiente tempora eius maiores! Ad, obcaecati quaerat. Nesciunt iure architecto sunt labore mollitia delectus blanditiis nam ea, corrupti, ab aspernatur, tempore nisi? Dolorem expedita deleniti dolore harum ab aliquid? Saepe molestiae fuga nihil quam dolorum, doloremque eum dicta similique corrupti, voluptates facilis perferendis, natus laboriosam quia excepturi id doloribus dolorem dolore omnis iusto impedit qui delectus sit! Adipisci, in, quibusdam maiores quaerat sequi porro magnam reprehenderit laudantium molestias aperiam voluptas eligendi architecto eaque eum unde explicabo ad, perspiciatis doloribus. Distinctio libero eligendi suscipit! Perspiciatis quibusdam officiis rerum, repellat ipsum ad tenetur corrupti delectus. Quos alias dicta delectus odio laudantium voluptatibus libero cupiditate laborum asperiores doloribus, maxime omnis voluptate saepe magni, quod ut ipsum nam mollitia ea dolore tempora unde placeat! Necessitatibus, dolores. Pariatur nostrum saepe expedita error perspiciatis, quae deleniti quibusdam eligendi unde autem rem harum quos earum non ea molestias corporis veniam! Asperiores assumenda reiciendis, nihil possimus consequuntur commodi placeat nemo maxime impedit recusandae voluptatibus illum aut, officia labore distinctio, esse numquam porro sapiente ratione provident laudantium non! Id corporis dolorem consequatur? Nisi, mollitia sunt? Asperiores magnam autem est, dolorem quia, quod laudantium facilis provident mollitia nesciunt doloribus tempore. Laboriosam aut vitae a, enim modi iste numquam eum autem amet molestiae quaerat ipsum hic aperiam fugiat voluptatem deleniti voluptatum, nobis suscipit delectus soluta, ducimus cupiditate! Nisi veritatis, fugit quisquam sunt nesciunt praesentium officiis maiores asperiores laudantium. Aliquid iure vel molestias provident totam assumenda labore, quod dolorem velit eligendi. Ipsum esse veritatis tenetur provident soluta iusto magnam quo quia architecto animi, fugit ab fugiat iste fuga id facilis ex molestias sunt. Perferendis labore, quidem suscipit, eaque nemo eum et laboriosam quas consequatur aspernatur ullam debitis quaerat? Illo, officia. Vero beatae sint omnis dolor nisi a, nam laboriosam et laudantium, suscipit dolore, nemo explicabo vitae cumque. Laboriosam quis accusantium odio, ea perferendis delectus labore fuga quidem illum nam ipsum nisi velit corrupti necessitatibus assumenda, modi placeat nesciunt fugit eum quas eius sint? Modi vel consequuntur dolorem dolore iusto porro illum deserunt eligendi placeat id eum, quas quo doloribus magnam, laborum nulla. Eveniet sequi soluta obcaecati eum odio? Provident, reprehenderit nihil veritatis consectetur, doloremque quaerat vero odit, eius earum accusamus sit. Quo voluptates quisquam reiciendis possimus provident est et ipsam eius sit expedita fuga dolorum, autem, dolor quaerat facere mollitia incidunt ut.</p>
+
+      <!-- <div class="row justify-content-center align-items-center text-white mb-5 mx-3 rounded-4 flex-row" id="apk">
+        <button type="button" class="btn text-end text-white col-5 my-3 fs-4 fw-bold">
+          <img src="assetes/footerlogo2.png" class="my-0" width="64px" alt="">
+          دانلود اپلیکیشن دیجی‌کالا</button>
+         
+            <button type="button" class="btn text-white col-2 mx-0 my-3"><img src="assetes/coffe-bazzar.svg" alt=""></button>
+            <button type="button" class="btn text-white col-2 mx-0 my-3"><img src="assetes/myket.svg" alt=""></button>
+            <button type="button" class="btn text-white col-2 mx-0 my-3"><img src="assetes/sib-app.svg" alt=""></button>
+        
+          <a class="nav-link col-1 my-3" href="#" aria-current="page"><button type="button" class="btn bg-body mx-3 rounded-3 bg-body-secondary p-2"><img src="assetes/more.svg" type="img/svg"  alt=""></button></a>
+
+        </button>
+      </div> -->
+      
+      <ul class="flex-row text-white mx-4 text-center my-4 py-2 navbar rounded-3" id="apk">
+        <div class="flex-grow-1 text-end mx-3"><img src="assetes/footerlogo2.png" class="m-1" width="44px" alt=""><span class="fs-5 mx-3 fw-bold">دانلود اپلیکیشن دیجی‌کالا</span></div>
+        <div class="nav-item flex-fill text-start">
+          <button type="button" class="flex-fill border-0">
+            <img class="mx-1 flex-grow-1 text-start" src="assetes/coffe-bazzar.svg" alt="">
+            <img class="mx-1 flex-grow-1 text-start" src="assetes/myket.svg" alt="">
+            <img class="mx-1 flex-grow-1 text-start" src="assetes/sib-app.svg" alt="">
+            <img class="mx-1 flex-grow-1 text-start bg-white p-2 rounded-2" src="assetes/more (1).svg" alt="">
+          </button>
+        </div>
+      </ul>
+
+      <div class="row justify-content-center align-items-center g-2 ms-1 border-top " >
+        <div class="col">
+          <span class="opacity-75">
+            <div class="h4 fw-bold">فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین.
+              <p class="fs-6 fw-normal mt-2 ps-3 py-0 my-0">یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.</p>
+              
+            </div>
+          </span>
+        </div>
+        <div class="card text-start mx-1 col-1">
+          <picture class="text-center m-0 p-0">
+            <img class="img-fluid m-0 p-0" width="90%" src="assetes/rezi.png" alt="">
+          </picture>
+        </div>
+        <div class="card text-start mx-1 col-1">
+          <picture class="text-center m-0 p-0">
+            <img class="img-fluid m-0 p-0" width="70%" src="assetes/kasbokar.png" alt="">
+          </picture>
+        </div>
+        <div class="card text-start mx-1 col-1">
+          <picture class="text-center m-0 p-0">
+            <img class="img-fluid m-0 p-0" width="90%" src="assetes/enamad.png" alt="">
+          </picture>
+        </div>
+      </div>
+
+      <p>
+        <a class="btn bg-body text-primary border-0 pt-0 mt-0 opacity-75 fs-6" id="shop" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          مشاهده بیشتر
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        </a>
+      </p>
+      <div class="collapse border-0 " id="collapseExample">
+        <div class="card card-body border-0">
+          کالای دیجیتال
+انواع گوشی موبایل از برندهای مختلفی مثل آیفون،  گوشی سامسونگ، گوشی نوکیا، گوشی شیائومی، گوشی هواوی، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار مثل تبلت سامسونگ نوت 10، انواع هندزفری مثل هندزفری بی سیم، تلوزیون از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل مودم ایرانسل، آنتن و ... تنها بخشی از محصولاتی هستند که زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.
+
+خودرو، ابزار و تجهیزات صنعتی
+انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و صفحه کلاج و... و لوازم مصرفی خودرو مثل کفپوش سانا در این گروه قرار می‌گیرند.
+
+مد و پوشاک
+محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر، شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس، نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.
+
+اسباب بازی کودک و نوزاد
+در این دسته از کالاهای دیجی‌کالا، انواع لوازم بهداشتی و حمام کودک و نوزاد، انواع پوشاک و کفش، تبلت، اسباب‌بازی، لوازم اتاق خواب کودک، لوازم ایمنی، لوازم شخصی و غذا خوری و ... قرار می‌گیرد تا خرید را برای پدر و مادرها به کاری سریع و آسان تبدیل کند.
+
+کالاهای سوپر مارکتی
+هر چیزی از مواد خوراکی که به آن نیاز دارید، در سوپرمارکت دیجی‌کالا پیدا می‌شود، محصولات پرطرفداری مثل کره بادام‌زمینی، عسل، سس، قهوه، زعفران، شکلات، انواع نان و ... از برندهای معتبر و معروفی مثل نستله، نوتلا، استارباکس، مزمز، چی توز و ... همگی در اختیار شما هستند و تا رسیدن به آشپزخانه شما تنها چند کلیک فاصله دارند.
+
+زیبایی و سلامت
+انواع لوازم آرایش مثل لاک، رنگ مو، لوازم آرایش لب، چشم، صورت و... همگی در دیجی‌کالا موجود هستند. همچنین محصولات بهداشتی مثل انواع شامپو، کرم، ماسک صورت، ضد تعریق، ماسک مو  و...، انواع لوازم شخصی برقی، ست هدیه، بهترین انواع عطر و اسپری، انواع زیورآلات طلا و نقره مثل سرویس طلا، سرویس نقره و... به همراه وسایل مراقبت شخصی طبی در گروه زیبایی و سلامت دیجی‌کالا قرار می‌گیرد. در این بخش برندهای مطرحی مثل اسنس، پنبه ریز، سینره و... حضور دارند.
+
+خانه و آشپزخانه
+یکی از متنوع‌ترین بخش‌های دیجی‌کالا، بخش لوازم خانه و آشپزخانه است که از محصولاتی مثل صندلی گیمینگ در بخش صندلی‌ها گرفته تا انواع مبل راحتی، انواع آبگرمکن مثل آبگرمکن بوتان، لباسشویی‌های متنوع مثل انواع لباسشویی اسنوا، شیرآلات مختلف مثل شیرآلات قهرمان و...، ظروف و همچنین لوازم برقی آشپزخانه مثل توستر و... را شامل می‌شود و امکان خریدی عالی را برای مشتریان فراهم کرده است. در بخش لوازم خانگی دیجی‌کالا، برندهای معتبری مثل تفال، اخوان، فیلیپس، ال جی، اسنوا، جی پلاس و... حضور دارند.
+        </div>
+      </div>
+      
+      <a class="btn bg-body text-primary border-0 pt-0 mt-0 opacity-75 align-items-center fs-6" id="close" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        بستن
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
+      </a>
+
+      <caption>
+        <ul class="border-top text-center py-5">
+          <p class="opacity-50">برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.</p>
+        </ul>
+      </caption>
+      <footer>
+        <ul class="list-group list-group-horizontal p-0 mx-0 text-center">
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digimag.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digipay.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digistyle.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digiplus.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digify.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/jet.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/magnet.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digiMehr.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/fidibo.svg" alt=""></li>
+        </ul>
+        <ul class="list-group list-group-horizontal p-0 mx-0 text-center">
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/diginext.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/pindo.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/komodaa.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digiexpress.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/ganjeh.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digify.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/smartech.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digikala-business.svg" alt=""></li>
+          <li class="list-group-item bg-body-secondary flex-fill border-1 rounded-0 col-1 p-0"><img class="img-fluid" src="assetes/digikala-service.svg" alt=""></li>
+        </ul>
+      </footer>
+    </section>
+    
+    <script type="text/javascript" src="js/app.js" charset="UTF-8"></script> 
+  </body>
+</html>
